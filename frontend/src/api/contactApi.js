@@ -1,0 +1,11 @@
+import axios from "axios";
+
+const API =
+  "http://localhost:3000/api/v1";
+
+export const sendMessage =
+  (data) =>
+    axios.post(
+      `${API}/contact`,
+      data
+    );
